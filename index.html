@@ -1,0 +1,79 @@
+Task: Create a Simple CSS Animation
+
+Objective: Create a bouncing ball animation using CSS.
+Step 1: Set Up Your HTML
+
+Create a basic HTML structure. Your HTML file should look like this:
+
+html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Ball Animation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="ball"></div>
+</body>
+</html>
+
+Step 2: Style the Ball with CSS
+
+In your styles.css, style the ball and create the animation:
+
+css
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    border-radius: 50%;
+    position: relative;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-150px);
+    }
+    60% {
+        transform: translateY(-75px);
+    }
+}
+
+Step 3: Experiment and Customize
+
+    Change the background-color of the ball.
+    Modify the animation duration in the .ball class.
+    Adjust the translateY values in the @keyframes to make the bounce higher or lower.
+
+Learning Resources
+
+To help you understand CSS animations better, here are some excellent resources:
+
+    MDN Web Docs: CSS Animations
+        A comprehensive guide to CSS animations with examples.
+        Read here (https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations)
+
+    CSS Tricks: A Complete Guide to CSS Animations
+        An easy-to-follow guide on CSS animations and transitions.
+        Explore here (https://css-tricks.com/almanac/properties/a/animation/)
+
+    W3Schools: CSS Animations
+        A beginner-friendly introduction to CSS animations, including examples and try-it-yourself editors.
+        Visit here (https://www.w3schools.com/css/css3_animations.asp)
